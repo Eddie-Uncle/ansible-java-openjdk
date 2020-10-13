@@ -7,7 +7,7 @@
         repo: 'ppa:openjdk-r/ppa'
         state: present
         update_cache: true
-      when: java_openjdk_use_ppa or java_openjdk_version == 8
+      when: java_openjdk_use_ppa or java_openjdk_version == 11
 
     - name: install openjdk
       apt:
